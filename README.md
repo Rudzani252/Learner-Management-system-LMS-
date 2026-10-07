@@ -61,17 +61,10 @@ Resolved
 - uv
 
 # Architecture
-Tkinter Desktop Application
-          │
-          │ HTTP Requests
-          ▼
-      FastAPI API
-          │
-          ▼
-     SQLAlchemy ORM
-          │
-          ▼
-       MySQL
+Tkinter Desktop Application --> FastAPI API --> SQLAlchemy ORM --> MySQL
+          
+          
+       
 
 FastAPI routers separate the major application features:
 - Learner Router
@@ -141,6 +134,7 @@ cd <repository-name>
 
 If uv is not already installed:
 pip install uv
+
 3. Install dependencies
 
 uv sync
