@@ -1,0 +1,68 @@
+ 2026-08-28 21:17:27,590 | INFO | TRANSACTION | Successful: False | Processing Time: 0.0496 seconds
+ 2026-08-28 21:17:27,590 | WARNING | VALIDATION FAILURE| Field:learner_email|Student ID: Unknown| Reason: Learner email does not exist
+ 2026-08-28 21:18:19,125 | INFO | TRANSACTION | Successful: False | Processing Time: 0.0258 seconds
+ 2026-08-28 21:18:19,125 | WARNING | VALIDATION FAILURE| Field:learner_email|Student ID: Unknown| Reason: Learner email does not exist
+ 2026-08-28 21:18:19,218 | ERROR | APPLICATION ERROR | Type: IntegrityError | Message: (pymysql.err.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`lms`.`registrations`, CONSTRAINT `registrations_ibfk_1` FOREIGN KEY (`learner_id`) REFERENCES `learners` (`learner_id`))')
+[SQL: INSERT INTO registrations (learner_id, learner_email, course_id, status) VALUES (%(learner_id)s, %(learner_email)s, %(course_id)s, %(status)s)]
+[parameters: {'learner_id': 1, 'learner_email': 'rg@gmail.com', 'course_id': 1, 'status': 'Pending'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+ 2026-08-28 21:20:08,878 | INFO | TRANSACTION | Successful: False | Processing Time: 0.0287 seconds
+ 2026-08-28 21:20:08,878 | WARNING | VALIDATION FAILURE| Field:learner_email|Student ID: Unknown| Reason: Learner email does not exist
+ 2026-08-28 21:20:08,936 | WARNING | DUPLICATE REGISTRATION| Course:Concurrency Python |Student ID: 129|Registration rejected
+ 2026-08-28 21:20:08,936 | INFO | TRANSACTION | Successful: False | Processing Time: 0.0229 seconds
+ 2026-08-28 21:21:56,439 | INFO | TRANSACTION | Successful: False | Processing Time: 0.0252 seconds
+ 2026-08-28 21:21:56,439 | WARNING | VALIDATION FAILURE| Field:learner_email|Student ID: Unknown| Reason: Learner email does not exist
+ 2026-08-28 21:21:56,484 | WARNING | DUPLICATE REGISTRATION| Course:Concurrency Python |Student ID: 129|Registration rejected
+ 2026-08-28 21:21:56,484 | INFO | TRANSACTION | Successful: False | Processing Time: 0.0220 seconds
+ 2026-08-28 21:23:02,445 | INFO | TRANSACTION | Successful: False | Processing Time: 0.0248 seconds
+ 2026-08-28 21:23:02,445 | WARNING | VALIDATION FAILURE| Field:learner_email|Student ID: Unknown| Reason: Learner email does not exist
+ 2026-08-28 21:23:02,486 | WARNING | DUPLICATE REGISTRATION| Course:Concurrency Python |Student ID: 129|Registration rejected
+ 2026-08-28 21:23:02,486 | INFO | TRANSACTION | Successful: False | Processing Time: 0.0173 seconds
+ 2026-08-28 21:32:11,192 | INFO | TRANSACTION | Successful: False | Processing Time: 0.0203 seconds
+ 2026-08-28 21:32:11,197 | WARNING | VALIDATION FAILURE| Field:learner_email|Student ID: Unknown| Reason: Learner email does not exist
+ 2026-08-28 21:32:11,231 | WARNING | DUPLICATE REGISTRATION| Course:Concurrency Python |Student ID: 129|Registration rejected
+ 2026-08-28 21:32:11,231 | INFO | TRANSACTION | Successful: False | Processing Time: 0.0122 seconds
+ 2026-08-28 21:33:51,311 | INFO | TRANSACTION | Successful: False | Processing Time: 0.0235 seconds
+ 2026-08-28 21:33:51,311 | WARNING | VALIDATION FAILURE| Field:learner_email|Student ID: Unknown| Reason: Learner email does not exist
+ 2026-08-28 21:33:51,397 | WARNING | DUPLICATE REGISTRATION| Course:Concurrency Python |Student ID: 129|Registration rejected
+ 2026-08-28 21:33:51,397 | INFO | TRANSACTION | Successful: False | Processing Time: 0.0202 seconds
+ 2026-08-28 21:34:42,292 | INFO | TRANSACTION | Successful: False | Processing Time: 0.0257 seconds
+ 2026-08-28 21:34:42,292 | WARNING | VALIDATION FAILURE| Field:learner_email|Student ID: Unknown| Reason: Learner email does not exist
+ 2026-08-28 21:34:42,336 | WARNING | DUPLICATE REGISTRATION| Course:Concurrency Python |Student ID: 129|Registration rejected
+ 2026-08-28 21:34:42,336 | INFO | TRANSACTION | Successful: False | Processing Time: 0.0149 seconds
+ 2026-08-28 21:37:21,965 | INFO | TRANSACTION | Successful: False | Processing Time: 0.0337 seconds
+ 2026-08-28 21:37:21,965 | WARNING | VALIDATION FAILURE| Field:learner_email|Student ID: Unknown| Reason: Learner email does not exist
+ 2026-08-28 21:37:22,012 | WARNING | DUPLICATE REGISTRATION| Course:Concurrency Python |Student ID: 129|Registration rejected
+ 2026-08-28 21:37:22,012 | INFO | TRANSACTION | Successful: False | Processing Time: 0.0225 seconds
+ 2026-08-28 21:39:51,519 | INFO | TRANSACTION | Successful: False | Processing Time: 0.0365 seconds
+ 2026-08-28 21:39:51,519 | WARNING | VALIDATION FAILURE| Field:learner_email|Student ID: Unknown| Reason: Learner email does not exist
+ 2026-08-28 21:39:51,567 | WARNING | DUPLICATE REGISTRATION| Course:Concurrency Python |Student ID: 129|Registration rejected
+ 2026-08-28 21:39:51,567 | INFO | TRANSACTION | Successful: False | Processing Time: 0.0212 seconds
+ 2026-08-28 21:41:19,295 | INFO | TRANSACTION | Successful: False | Processing Time: 0.0223 seconds
+ 2026-08-28 21:41:19,295 | WARNING | VALIDATION FAILURE| Field:learner_email|Student ID: Unknown| Reason: Learner email does not exist
+ 2026-08-28 21:41:19,324 | WARNING | DUPLICATE REGISTRATION| Course:Concurrency Python |Student ID: 129|Registration rejected
+ 2026-08-28 21:41:19,324 | INFO | TRANSACTION | Successful: False | Processing Time: 0.0108 seconds
+ 2026-08-28 21:42:47,006 | INFO | TRANSACTION | Successful: False | Processing Time: 0.0240 seconds
+ 2026-08-28 21:42:47,006 | WARNING | VALIDATION FAILURE| Field:learner_email|Student ID: Unknown| Reason: Learner email does not exist
+ 2026-08-28 21:42:47,041 | WARNING | DUPLICATE REGISTRATION| Course:Concurrency Python |Student ID: 129|Registration rejected
+ 2026-08-28 21:42:47,041 | INFO | TRANSACTION | Successful: False | Processing Time: 0.0120 seconds
+ 2026-08-28 21:46:48,431 | WARNING | DUPLICATE REGISTRATION| Course:Concurrency Python |Student ID: 129|Registration rejected
+ 2026-08-28 21:46:48,433 | INFO | TRANSACTION | Successful: False | Processing Time: 0.0382 seconds
+ 2026-08-28 21:46:48,479 | WARNING | DUPLICATE REGISTRATION| Course:Concurrency Python |Student ID: 129|Registration rejected
+ 2026-08-28 21:46:48,479 | INFO | TRANSACTION | Successful: False | Processing Time: 0.0146 seconds
+ 2026-08-28 21:46:48,494 | WARNING | DUPLICATE REGISTRATION| Course:Concurrency Python |Student ID: 129|Registration rejected
+ 2026-08-28 21:46:48,496 | INFO | TRANSACTION | Successful: False | Processing Time: 0.0084 seconds
+ 2026-08-28 21:46:48,532 | WARNING | DUPLICATE REGISTRATION| Course:Concurrency Python |Student ID: 129|Registration rejected
+ 2026-08-28 21:46:48,532 | INFO | TRANSACTION | Successful: False | Processing Time: 0.0088 seconds
+ 2026-08-28 21:46:48,561 | WARNING | DUPLICATE REGISTRATION| Course:Concurrency Python |Student ID: 129|Registration rejected
+ 2026-08-28 21:46:48,561 | INFO | TRANSACTION | Successful: False | Processing Time: 0.0083 seconds
+ 2026-08-28 21:46:48,604 | WARNING | DUPLICATE REGISTRATION| Course:Concurrency Python |Student ID: 129|Registration rejected
+ 2026-08-28 21:46:48,604 | INFO | TRANSACTION | Successful: False | Processing Time: 0.0120 seconds
+ 2026-08-28 21:46:48,632 | WARNING | DUPLICATE REGISTRATION| Course:Concurrency Python |Student ID: 129|Registration rejected
+ 2026-08-28 21:46:48,632 | INFO | TRANSACTION | Successful: False | Processing Time: 0.0072 seconds
+ 2026-08-28 21:46:48,651 | WARNING | DUPLICATE REGISTRATION| Course:Concurrency Python |Student ID: 129|Registration rejected
+ 2026-08-28 21:46:48,651 | INFO | TRANSACTION | Successful: False | Processing Time: 0.0083 seconds
+ 2026-08-28 21:46:48,666 | WARNING | DUPLICATE REGISTRATION| Course:Concurrency Python |Student ID: 129|Registration rejected
+ 2026-08-28 21:46:48,666 | INFO | TRANSACTION | Successful: False | Processing Time: 0.0076 seconds
+ 2026-08-28 21:46:48,756 | WARNING | DUPLICATE REGISTRATION| Course:Concurrency Python |Student ID: 129|Registration rejected
+ 2026-08-28 21:46:48,756 | INFO | TRANSACTION | Successful: False | Processing Time: 0.0353 seconds
