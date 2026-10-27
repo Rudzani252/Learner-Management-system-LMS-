@@ -1,5 +1,5 @@
-PASSWORD = 
-DATABASE = 
-HOST = 
-PORT = 
-USER = 
+PASSWORD = "R25190412r"
+DATABASE = "lms"
+HOST = "localhost"
+PORT = "3306"
+USER = "root"

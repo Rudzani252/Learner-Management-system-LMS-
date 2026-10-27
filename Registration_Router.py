@@ -1,10 +1,10 @@
 from fastapi import  Depends, HTTPException, APIRouter
 from LMS_Database import get_db, engine
 from sqlalchemy.orm import Session
-from model import Learner, Course, Registration
+from Models import Learner, Course, Registration
 from pydantic import BaseModel
 from Singleton import AppConfig
-from Bugzot.models import (
+from app.Bugzot.Monitoring_system import (
     log_validation_failure,
     log_dup_registration,
     log_course_capacity_violation,

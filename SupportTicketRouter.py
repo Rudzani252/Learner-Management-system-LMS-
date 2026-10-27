@@ -1,7 +1,7 @@
 from fastapi import FastAPI, Depends,  APIRouter
 from LMS_Database import get_db, engine
 from sqlalchemy.orm import Session
-from model import SupportTicket as SupportTicketModel
+from Models import SupportTicket as SupportTicketModel
 from pydantic import BaseModel
 from enum import Enum
 from SupportTicket import SupportTicketFactory

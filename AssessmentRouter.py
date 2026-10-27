@@ -1,7 +1,7 @@
 from fastapi import FastAPI, Depends, APIRouter
 from LMS_Database import get_db, engine
 from sqlalchemy.orm import Session
-from model import Assessment, Learner, Course, Lecturer
+from Models import Assessment, Learner, Course, Lecturer
 from pydantic import BaseModel
 import datetime
 

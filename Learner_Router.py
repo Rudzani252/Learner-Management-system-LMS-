@@ -1,7 +1,7 @@
 from fastapi import Depends, HTTPException, APIRouter
 from LMS_Database import get_db, engine
 from sqlalchemy.orm import Session
-from model import Learner
+from Models import Learner
 from pydantic import BaseModel, ConfigDict
 import bcrypt
 
@@ -56,9 +56,9 @@ class UpdateLearner(BaseModel):
     password: str |None =None
     phone_no :str |None =None
 
-@router.put("/learners/{learner_email}")
-def update_learner(learner_email: str, learner: UpdateLearner, db:Session = Depends(get_db)):
-    existing_learner = db.query(Learner).filter(Learner.email== learner_email).first()
+@router.put("/learners/{learner_id}")
+def update_learner(learner_id: int, learner: UpdateLearner, db:Session = Depends(get_db)):
+    existing_learner = db.query(Learner).filter(Learner.learner_id== learner_id).first()
     if not existing_learner:
         raise HTTPException(
         status_code = 400,
@@ -75,7 +75,9 @@ def update_learner(learner_email: str, learner: UpdateLearner, db:Session = Depe
         existing_learner.phone_no = learner.phone_no
 
     if learner.password is not None:
-        existing_learner.password = learner.password
+        existing_learner.password = bcrypt.hashpw(
+        learner.password.encode("utf-8"),
+        bcrypt.gensalt()).decode("utf-8")
 
     db.commit()
     db.refresh(existing_learner)

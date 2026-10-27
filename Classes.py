@@ -85,7 +85,7 @@ class Learner():
         
 
 
-    def updateDetails(self):
+    def updateDetails(self,email):
         self.email = input("Enter current email: ")
         self.first_name = input("Enter first name: ")
         self.last_name = input("Enter last name: ")
@@ -157,8 +157,9 @@ class Learner():
             response = requests.post(f"{config.api_url}/login",json=data,timeout=10)
             print("Status:", response.status_code)
             print("Response text:", response.text)
-            result = response.json()
+            
             if response.status_code == 200:
+                result = response.json()
                 if result ["status"] == "Successful":
                         learner = result["learner"]
                         self.learner_id = learner["learner_id"]
@@ -176,11 +177,11 @@ class Learner():
                 else:
                      return{
                             "status":"Failed",
-                            "message":"Unable to Login"},None
+                            "message":"Unable to Login"}
             else:
                return{
                 "status":"Failed",
-                "message":"Unable to Login"}, None
+                "message":"Unable to Login"}
         except requests.exceptions.Timeout:
            print(
             "Error",
