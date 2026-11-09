@@ -1,4 +1,4 @@
-#Learning Management System (LMS)
+# Learning Management System (LMS)
 
 ## Overview
 A Python-based Learning Management System (LMS) designed to manage learners, courses, registrations, assessments, and support tickets.
